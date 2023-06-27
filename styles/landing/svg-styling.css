@@ -1,0 +1,307 @@
+/**Animaciones svg de primera seccion*/
+
+@keyframes svgMainRectangle {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(-5vw);
+        opacity: 1;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+}
+#svg-main-rectangle {
+    animation: svgMainRectangle 8s infinite ease-out;
+}
+
+@keyframes svgMediumCircle {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(5vw);
+        opacity: 1;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+#svg-medium-circle {
+    animation: svgMediumCircle 8s infinite;
+}
+
+@keyframes svgSmallCircle {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(5vh);
+        opacity: 1;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vh);
+        opacity: 0;
+    }
+}
+#svg-small-circle {
+    animation: svgSmallCircle 8s infinite;
+}
+
+@keyframes svgBigCircle {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(-5vh);
+        opacity: 1;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100vh);
+        opacity: 0;
+    }
+}
+#svg-big-circle {
+    animation: svgBigCircle 8s infinite;
+}
+
+@keyframes svgRoundedRectangle {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(-5vh);
+        opacity: 1;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100vh);
+        opacity: 0;
+    }
+}
+#svg-rounded-rectangle {
+    animation: svgRoundedRectangle 8s infinite;
+}
+
+@keyframes svgExampleProfile {
+    0% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(0.5vh);
+    }
+    35% {
+        transform: none;
+    }
+    65% {
+        transform: translateY(0.5vh);
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+}
+
+#example-profile-1, #example-profile-2, #example-profile-3, #example-profile-4 {
+    transform: translateY(15vh);
+    opacity: 0;
+    animation: svgExampleProfile 8s infinite;
+    animation-delay: var(--svg-animation-delay);
+}
+
+@keyframes svgDashboard {
+    0% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(0.4vh);
+    }
+    40% {
+        transform: none;
+    }
+    60% {
+        transform: translateY(0.4vh);
+    }
+    70% {
+        transform: none;
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+}
+
+#dashboard-svg {
+    transform: translateY(15vh);
+    opacity: 0;
+    animation: svgDashboard 8s infinite;
+    animation-delay: var(--dashboard-animation-delay);
+}
+
+/**Animaciones svg de actividades*/
+
+@keyframes slideInOut {
+    0% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+    25% {
+        transform: none;
+        opacity: 1;
+    }
+    80% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+}
+.activities-section svg {
+    max-width: 90%;
+}
+.svg-activity-widget {
+    transform: translateY(15vh);
+    opacity: 0;
+    height: auto;
+    animation: slideInOut 8s infinite;
+    animation-delay: var(--activity-widget-delay);
+}
+
+
+/**Animaciones svg demostración*/
+@keyframes fadeInUpSvg {
+    0% {
+        opacity: 0;
+        transform: translateY(15vh);
+    }
+    10% {
+        opacity: 1;
+        transform: none;
+    }
+    80% {
+        opacity: 1;
+        transform: none;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(15vh);
+    }
+}
+@keyframes fadeInUpOscilateSvg {
+    0% {
+        opacity: 0;
+        transform: translateY(15vh);
+    }
+    10% {
+        opacity: 1;
+        transform: none;
+    }
+    20% {
+        transform: translateY(0.4rem);
+    }
+    30% {
+        transform: none;
+    }
+    40% {
+        transform: translateY(0.4rem);
+    }
+    50% {
+        transform: none;
+    }
+    60% {
+        transform: translateY(0.4rem);
+    }
+    70% {
+        transform: none;
+    }
+    80% {
+        opacity: 1;
+        transform: none;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(15vh);
+    }
+}
+.demonstration-svg *{
+    animation: fadeInUpSvg 12s infinite;
+    opacity: 0;
+    transform: translateY(15vh);
+    animation-delay: var(--demonstration-svg-delay);
+}
+.svg-blank, .word-option {
+    animation: fadeInUpOscilateSvg 12s infinite;
+    animation-delay: var(--demonstration-svg-delay);
+}

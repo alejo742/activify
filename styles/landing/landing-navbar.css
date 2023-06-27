@@ -1,0 +1,150 @@
+:root {
+    --colorPrimario: #fff;
+    --colorSecundario: #000;
+    --colorTerciario: #5E17EB;
+    --colorCuaternario: #61D8DE;
+}
+
+*{
+    font-family: 'League Spartan';
+    color: #000;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    background-color: var(--colorPrimario);
+    width: 100%;
+    height: min(12vh, 80px);
+    padding: 0 5.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 700;
+}
+header h1 strong {
+    color: var(--colorTerciario);
+    font-weight: 700;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+header nav a {
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 0.4ch 1.5ch;
+    border-radius: 4px;
+    user-select: none;
+    height: fit-content;
+}
+header nav a:nth-child(1):hover, header nav a:nth-child(3):hover {
+    color: #5E17EB;
+    background-color: rgba(94, 23, 235, 0.1);
+}
+header nav a:nth-child(2), header nav a:nth-child(4) {
+    background-color: var(--colorTerciario);
+    color: var(--colorPrimario);
+}
+header nav a:nth-child(2):hover, header nav a:nth-child(4):hover {
+    opacity: 0.85;
+}
+
+:root {
+    --font-size: 0.7;
+    --color1: #000;
+    --borderRadius: 1em;
+}
+.dropdown-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(min(10vh, 70px) - 1px);
+    right: 0;
+    width: 100%;
+    height: 0px;
+    background-color: var(--colorPrimario);
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.dropdown-content.visible {
+    height: min(12vh, 80px);
+}
+.burger {
+    display: none;
+    font-size: var(--font-size);
+    cursor: pointer;
+    padding: 1.5em 0.75em;
+    transform: scale(0.7);
+}
+.burger > div {
+    width: 3.5em;
+    height: 0.5em;
+    border-radius: var(--borderRadius);
+    background: var(--color1);
+}
+.burger > div::before, .burger > div::after {
+    transition: font-size 0s;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3.5em;
+    height: 0.5em;
+    background: var(--color1);
+    border-radius: var(--borderRadius);
+}
+.burger > div::before {
+    margin-top: -1.5em;
+}
+.burger > div::after {
+    margin-top: 1.5em;
+}
+.burger1 {
+    transition: all 0.7s, font-size 0s;
+    transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
+}
+.burger1 > div {
+    transition: all 0.1s 0.3s, font-size 0s;
+}
+.burger1 > div::before, .burger1 > div::after {
+    transition: all 0.3s 0.2s, font-size 0s;
+}
+.burger1.toggled {
+    transform: rotate(180deg);
+}
+.burger1.toggled > div::before {
+    transform: rotate(45deg) translate(1.1em, 1em);
+}
+.burger1.toggled > div {
+    background: transparent;
+}
+.burger1.toggled > div::after {
+    transform: rotate(-45deg) translate(1.1em, -1em);
+}
+
+@media only screen and (max-width:500px){
+    header {
+        height: min(10vh, 70px);
+    }
+    main {
+        padding-top: min(10vh, 70px);
+    }
+    header h1 {
+        font-size: 4rem;
+    }
+    header nav > a {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}

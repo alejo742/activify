@@ -1,0 +1,80 @@
+:root {
+    --colorPrimario: #fff;
+    --colorPrimarioVariante: #f0f0f0;
+    --colorSecundario: #000;
+    --colorTerciario: #5E17EB;
+    --colorCuaternario: #61D8DE;
+    --grisFuerte: #484848;
+}
+
+*{
+    font-family: 'League Spartan';
+    color: #000;
+}
+html{
+    font-size: 62.5%;
+}
+
+/*Estilos del footer*/
+footer {
+    background-color: var(--colorPrimarioVariante);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vmax;
+    padding: max(7vh, 7rem) 5.5vw;
+}
+footer .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: max(1.5vh, 1.5rem);
+}
+footer .left h2 {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 700;
+}
+footer .left h2 strong {
+    color: var(--colorTerciario);
+    font-weight: 700;
+}
+footer .left p {
+    max-width: min(70%, 345px);
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #484848;
+}
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: max(1.5rem, 2vw);
+}
+.footer-socials img {
+    cursor: pointer;
+    width: 45px;
+    height: auto;
+    transition: all 0.3s;
+}
+.footer-socials img:hover {
+    opacity: 0.85;
+}
+@media only screen and (max-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 4vmax;
+    }
+    footer * {
+        text-align: center;
+    }
+    footer .left {
+        align-items: center;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,87 @@
+<svg width="440" height="716" viewBox="0 0 440 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="demonstration-svg">
+<rect width="440" height="716" rx="12" fill="#F0F0F0"/>
+<g id="demonstration-frame" clip-path="url(#clip0_405_555)">
+<g id="demonstration-paragraph">
+<line id="line" x1="25" y1="37" x2="415" y2="37" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_2" x1="25" y1="67" x2="270" y2="67" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_3" x1="25" y1="97" x2="75" y2="97" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_4" x1="177" y1="97" x2="415" y2="97" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_5" x1="25" y1="127" x2="415" y2="127" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_6" x1="25" y1="157" x2="415" y2="157" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_7" x1="25" y1="187" x2="145" y2="187" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_8" x1="247" y1="187" x2="415" y2="187" stroke="#9A9A9A" stroke-width="4"/>
+<g id="svg-blank">
+<rect x="275" y="55" width="92" height="24" rx="8" fill="white"/>
+</g>
+<g id="svg-blank_2">
+<rect x="80" y="85" width="92" height="24" rx="8" fill="white"/>
+</g>
+<g id="svg-blank_3">
+<rect x="150" y="175" width="92" height="24" rx="8" fill="white"/>
+</g>
+<path id="line_9" d="M374 67L415 67" stroke="#9A9A9A" stroke-width="4"/>
+</g>
+<g id="demonstration-paragraph_2">
+<line id="line_10" x1="415" y1="367" x2="25" y2="367" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_11" x1="415" y1="337" x2="170" y2="337" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_12" x1="415" y1="307" x2="365" y2="307" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_13" x1="263" y1="307" x2="25" y2="307" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_14" x1="415" y1="277" x2="25" y2="277" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_15" x1="415" y1="247" x2="25" y2="247" stroke="#9A9A9A" stroke-width="4"/>
+<line id="line_16" x1="415" y1="217" x2="25" y2="217" stroke="#9A9A9A" stroke-width="4"/>
+<g id="svg-blank_4">
+<rect x="73" y="325" width="92" height="24" rx="8" fill="white"/>
+</g>
+<g id="svg-blank_5">
+<rect x="268" y="295" width="92" height="24" rx="8" fill="white"/>
+</g>
+<path id="line_17" d="M66 337H25" stroke="#9A9A9A" stroke-width="4"/>
+</g>
+</g>
+<g id="demonstration-words">
+<rect x="25" y="406" width="390" height="164" rx="4" fill="white"/>
+<g id="word-option">
+<circle id="list-dot" cx="51" cy="437" r="5" fill="#5E17EB"/>
+<line id="line_18" x1="64.9909" y1="437" x2="144.991" y2="437" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_2">
+<circle id="list-dot_2" cx="51" cy="469" r="5" fill="#5E17EB"/>
+<line id="line_19" x1="64.9909" y1="469" x2="154.991" y2="469" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_3">
+<circle id="list-dot_3" cx="51" cy="501" r="5" fill="#5E17EB"/>
+<line id="line_20" x1="64.9909" y1="501" x2="164.991" y2="501" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_4">
+<circle id="list-dot_4" cx="51" cy="533" r="5" fill="#5E17EB"/>
+<line id="line_21" x1="64.9909" y1="533" x2="114.991" y2="533" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_5">
+<circle id="list-dot_5" cx="246" cy="437" r="5" fill="#5E17EB"/>
+<line id="line_22" x1="259.991" y1="437" x2="319.991" y2="437" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_6">
+<circle id="list-dot_6" cx="246" cy="469" r="5" fill="#5E17EB"/>
+<line id="line_23" x1="259.991" y1="469" x2="299.991" y2="469" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_7">
+<circle id="list-dot_7" cx="246" cy="501" r="5" fill="#5E17EB"/>
+<line id="line_24" x1="259.991" y1="501" x2="359.991" y2="501" stroke="black" stroke-width="4"/>
+</g>
+<g id="word-option_8">
+<circle id="list-dot_8" cx="246" cy="533" r="5" fill="#5E17EB"/>
+<line id="line_25" x1="259.991" y1="533" x2="349.991" y2="533" stroke="black" stroke-width="4"/>
+</g>
+</g>
+<g id="demonstration-button">
+<rect x="148" y="628" width="144" height="54" rx="8" fill="#5E17EB"/>
+<line id="line_26" x1="190" y1="655" x2="250" y2="655" stroke="#F0F0F0" stroke-width="4"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_405_555">
+<rect width="390" height="384" fill="white" transform="translate(25 22)"/>
+</clipPath>
+</defs>
+</svg>
