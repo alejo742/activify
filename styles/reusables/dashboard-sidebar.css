@@ -1,0 +1,151 @@
+:root {
+    --colorPrimario: #fff;
+    --colorPrimarioVariante: #f0f0f0;
+    --colorSecundario: #000;
+    --colorTerciario: #5E17EB;
+    --colorCuaternario: #61D8DE;
+    --grisFuerte: #484848;
+}
+
+*{
+    font-family: 'League Spartan';
+    color: #000;
+}
+
+.dashboard-side-bar {
+    background-color: var(--colorPrimario);
+    width: 220px;
+    height: 100vh;
+    padding: 2.5vh 1.5vw;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vh;
+}
+.dashboard-side-bar .top {
+    display: flex;
+    flex-direction: column;
+    gap: max(9vh, 7rem);
+}
+.dashboard-side-bar .top img {
+    width: 4.5rem;
+}
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+}
+.nav-element {
+    display: flex;
+    align-items: center;
+    gap: min(1.6rem, 1.2vw);
+    padding: max(0.9vh, 0.8rem) 0;
+    transition: all 0.3s;
+}
+.nav-element:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.nav-element * {
+    transition: all 0.3s;
+}
+.nav-element.selected {
+    border-right: 4px solid var(--colorTerciario);
+}
+.nav-element svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #484848;
+}
+.nav-element.current svg {
+    fill: var(--colorTerciario);
+}
+.nav-element span {
+    color: #484848;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-element.current span {
+    color: var(--colorTerciario);
+}
+.dashboard-side-bar .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: max(6vh, 4.5rem);
+}
+.account-section {
+    display: flex;
+    flex-direction: column;
+    gap: max(1.5vh, 1.2rem);
+}
+.account-button {
+    background-color: var(--colorPrimarioVariante);
+    display: flex;
+    align-items: center;
+    gap: max(1vw, 1rem);
+    padding: 0.5rem 1rem;
+    border-radius: 1000px;
+    text-decoration: none;
+}
+.account-button .left {
+    height: 100%;
+}
+.account-button img {
+    aspect-ratio: 1/1;
+    height: 4rem;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.account-button .right {
+    display: flex;
+    flex-direction: column;
+}
+.account-button .right h5 {
+    font-size: 1.5rem;
+    color: var(--colorSecundario);
+    font-weight: 500;
+    text-decoration: none;
+}
+.account-button span {
+    padding: 0 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    border-radius: 100px;
+    border: 1px solid #61D8DE;
+    font-size: 1.2rem;
+    color: #61D8DE;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.upgrade-button {
+    background-color: var(--colorTerciario);
+    display: flex;
+    padding: 0.2rem 1.9rem;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+.upgrade-button svg {
+    width: 3rem;
+    height: 3rem;
+    fill: #FFD600;
+}
+.upgrade-button span {
+    color: var(--colorPrimario);
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+.upgrade-button:hover {
+    opacity: 0.85;
+}
