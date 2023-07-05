@@ -179,6 +179,14 @@ main::-webkit-scrollbar-thumb {
     }
     .activities-grid {
         grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
