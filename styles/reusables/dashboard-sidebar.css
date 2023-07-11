@@ -11,6 +11,9 @@
     font-family: 'League Spartan';
     color: #000;
 }
+a {
+    text-decoration: none;
+}
 
 .dashboard-side-bar {
     background-color: var(--colorPrimario);
