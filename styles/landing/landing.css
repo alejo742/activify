@@ -30,7 +30,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 .hero-section h2 {
     color: var(--colorPrimario);
@@ -39,7 +39,10 @@ main {
     font-weight: 600;
     line-height: 7.8rem;
     margin-bottom: 1rem;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .hero-section p {
     color: var(--colorPrimarioVariante);
@@ -49,6 +52,8 @@ main {
     margin-bottom: 3rem;
 }
 .hero-section a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     background-color: var(--colorPrimario);
     color: var(--colorTerciario);
@@ -59,7 +64,10 @@ main {
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .hero-section a:hover {
     opacity: 0.75;
@@ -68,7 +76,7 @@ main {
 
 .hero-section .right {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .hero-section .right svg {
@@ -146,7 +154,10 @@ main {
 .activities-info-container .left h2 {
     font-size: 7rem;
     font-weight: 600;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .activities-info-container .left p {
     font-size: 2rem;
@@ -162,12 +173,17 @@ main {
     text-align: center;
     background-color: var(--colorTerciario);
     color: var(--colorPrimario);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 1.2rem 2.2rem;
     margin-top: 3.5rem;
     border-radius: 100px;
     transition: all 0.3s;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .activities-info-container .left a:hover {
     cursor: pointer;
@@ -185,6 +201,8 @@ main {
 }
 @media only screen and (max-width: 900px) {
     .activities-info-container {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         grid-template-columns: 1fr;
         padding: 0;
@@ -334,6 +352,8 @@ main {
     margin-bottom: max(3vh, 3rem);
 }
 .utility-section .top a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 2rem;
     font-weight: 500;
@@ -382,6 +402,8 @@ main {
     gap: 3vw;
 }
 .utility-section a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 1vh 1vw;
     padding-left: 0;
@@ -400,7 +422,7 @@ main {
 
 .utility-section .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 .utility-section .right svg {
@@ -448,6 +470,8 @@ main {
 .popup {
     position: relative;
     width: min(840px, 70%);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     border: 1px solid rgba(94, 23, 235, 0.20);
     border-radius: 20px;
@@ -491,7 +515,8 @@ main {
 .popup img {
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 20px;
 }
 .hide-popup {

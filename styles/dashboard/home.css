@@ -15,14 +15,14 @@
 body {
     display: flex;
     max-height: 100vh;
-    gap: 7vw;
+    gap: 3vw;
 }
 .hidden {
     display: none;
 }
 
 main {
-    max-width: min(750px, 90vw);
+    width: min(750px, 90vw);
     display: flex;
     flex-direction: column;
     gap: max(3vh, 2.5rem);
@@ -77,12 +77,12 @@ main::-webkit-scrollbar-thumb {
 }
 .welcome-container .top {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 2rem;
 }
 .welcome-container .bottom {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 2rem;
 }
 .welcome-stat {
@@ -130,7 +130,8 @@ main::-webkit-scrollbar-thumb {
     max-width: 350px;
     display: grid;
     grid-template-columns: 5fr 4fr;
-    column-gap: 1vw;
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
     width: 100%;
     min-height: 12rem;
     border-radius: 2rem;
@@ -164,7 +165,7 @@ main::-webkit-scrollbar-thumb {
 }
 .activity .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 .activity svg {
