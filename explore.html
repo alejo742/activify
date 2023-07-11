@@ -122,21 +122,105 @@
     </div>
 
     <main>
-        <h1>Explora actividades de otros profesores</h1>
+        <h1>Explora actividades de otros profesores:</h1>
         <div class="filtering-ui">
             <div class="search-bar">
-                <div class="svg-holder"></div>
+                <div class="svg-holder">
+                    <svg style="fill: #9A9A9A; height: 2rem;" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"/></svg>
+                </div>
                 <div class="input-holder">
                     <input type="text" placeholder="Busca algo...">
                 </div>
             </div>
             <div class="filter-dropdown">
-                <span>Destacado</span>
-                <div class="svg-holder"></div>
+                <span class="current-filter-option">Destacado</span>
+                <div class="svg-holder">
+                    <svg style="fill: #484848; height: 2.4rem;" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                </div>
+                <div class="filter-dropdown-content hidden">
+                    <span style="border-radius: 6px 6px 0 0;" class="selected">Destacado</span>
+                    <span>Nuevo</span>
+                    <span>Antiguo</span>
+                </div>
+            </div>
+        </div>
+        <div class="activities-grid">
+            <div class="activity">
+                <div class="top" style="background-image: url('./resources/dashboard/result-image.jpg');">
+                    <div class="black-image-overlay"></div>
+                    <span class="activity-type">Completa la<br>palabra</span>
+                    <span class="activity-views">1.2k vistas</span>
+                </div>
+                <div class="bottom">
+                    <h4 class="activity-category">Vocabulario</h4>
+                    <h3 class="activity-name">Las frutas</h3>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="top" style="background-image: url('./resources/dashboard/result-image.jpg');">
+                    <div class="black-image-overlay"></div>
+                    <span class="activity-type">Completa la<br>palabra</span>
+                    <span class="activity-views">1.2k vistas</span>
+                </div>
+                <div class="bottom">
+                    <h4 class="activity-category">Vocabulario</h4>
+                    <h3 class="activity-name">Las frutas</h3>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="top" style="background-image: url('./resources/dashboard/result-image.jpg');">
+                    <div class="black-image-overlay"></div>
+                    <span class="activity-type">Completa la<br>palabra</span>
+                    <span class="activity-views">1.2k vistas</span>
+                </div>
+                <div class="bottom">
+                    <h4 class="activity-category">Vocabulario</h4>
+                    <h3 class="activity-name">Las frutas</h3>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="top" style="background-image: url('./resources/dashboard/result-image.jpg');">
+                    <div class="black-image-overlay"></div>
+                    <span class="activity-type">Completa la<br>palabra</span>
+                    <span class="activity-views">1.2k vistas</span>
+                </div>
+                <div class="bottom">
+                    <h4 class="activity-category">Vocabulario</h4>
+                    <h3 class="activity-name">Las frutas</h3>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="top" style="background-image: url('./resources/dashboard/result-image.jpg');">
+                    <div class="black-image-overlay"></div>
+                    <span class="activity-type">Completa la<br>palabra</span>
+                    <span class="activity-views">1.2k vistas</span>
+                </div>
+                <div class="bottom">
+                    <h4 class="activity-category">Vocabulario</h4>
+                    <h3 class="activity-name">Las frutas</h3>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="top" style="background-image: url('./resources/dashboard/result-image.jpg');">
+                    <div class="black-image-overlay"></div>
+                    <span class="activity-type">Completa la<br>palabra</span>
+                    <span class="activity-views">1.2k vistas</span>
+                </div>
+                <div class="bottom">
+                    <h4 class="activity-category">Vocabulario</h4>
+                    <h3 class="activity-name">Las frutas</h3>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
             </div>
         </div>
     </main>
 
-    <script src="./scripts/dashboard/home.js"></script>
+    <script src="./scripts/dashboard/filter-dropdown.js"></script>
+    <script src="./scripts/dashboard/navbar.js"></script>
 </body>
 </html>
