@@ -188,6 +188,7 @@ a {
     transition: all 0.5s;
     overflow: hidden;
     border-radius: 6px;
+    z-index: 10;
 }
 .dropdown-content.visible {
     transform: scaleY(1);
