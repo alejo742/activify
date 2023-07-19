@@ -1,0 +1,23 @@
+:root {
+    --colorPrimario: #fff;
+    --colorPrimarioVariante: #f0f0f0;
+    --colorSecundario: #000;
+    --colorTerciario: #5E17EB;
+    --colorCuaternario: #61D8DE;
+    --grisFuerte: #484848;
+}
+
+*{
+    font-family: 'League Spartan';
+    color: #000;
+}
+
+body {
+    display: flex;
+    align-items: stretch;
+    max-height: 100vh;
+    gap: 3vw;
+}
+.hidden {
+    display: none;
+}
