@@ -325,6 +325,9 @@ a {
         gap: 1.5vmax;
         align-items: center;
     }
+    main {
+        height: 70vh !important;
+    }
     .dashboard-side-bar {
         display: none;
     }
