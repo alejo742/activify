@@ -34,7 +34,7 @@ main {
     padding: max(3.5vh, 3.5rem) max(2vw, 1.5rem);
 }
 .login-container {
-    width: min(320px, 85%);
+    width: min(32rem, 85%);
 }
 .session-container h1 {
     font-size: 3rem;

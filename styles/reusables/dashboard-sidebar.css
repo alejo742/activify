@@ -17,7 +17,7 @@ a {
 
 .dashboard-side-bar {
     background-color: var(--colorPrimario);
-    width: 220px;
+    width: 22rem;
     height: 100vh;
     padding: 2.5vh 1.5vw;
     padding-right: 0;

@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    width: min(750px, 90vw);
+    width: min(75rem, 90vw);
     display: flex;
     flex-direction: column;
     gap: max(3vh, 2.5rem);

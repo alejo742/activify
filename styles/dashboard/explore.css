@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    width: min(750px, 90vw);
+    width: min(75rem, 90vw);
     display: flex !important;
     flex-direction: column;
     gap: max(4vh, 3rem);
@@ -192,7 +192,7 @@ main h1 {
 .activity {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 250px;
+    height: 25rem;
     border-radius: 8px;
     transition: all 0.3s;
 }
