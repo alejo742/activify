@@ -11,3 +11,228 @@
     font-family: 'League Spartan';
     color: #000;
 }
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4vh;
+    padding: 6vh 6vw;
+}
+
+section.top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    color: #000;
+    font-size: 7rem;
+    font-weight: 700;
+    margin: 0;
+}
+.plan-type {
+    position: relative;
+    min-width: min(28rem, 90vw);
+    height: 4rem;
+    border-radius: 0.8rem;
+    background: #F0F0F0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.selected-background {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 3rem;
+    top: 0.5rem;
+    transform: translateX(0.5rem);
+    width: 46%;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.selected-background.right {
+    transform: translateX(calc(117% - 0.5rem));
+}
+.plan-type span {
+    height: 100%;
+    color: #484848;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.plan-type span strong {
+    color: #484848;
+    font-weight: 500;
+}
+.plan-type span.selected {
+    color: #000;
+}
+.plan-type span.selected strong {
+    color: #5E17EB;
+    font-weight: 600;
+}
+
+section.bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: max(1.6rem, 1.6vh);
+    row-gap: 3vh;
+}
+.plan {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    border: 1px solid rgba(154, 154, 154, 0.50);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: space-around;
+}
+.plan.basic {
+    background: rgba(94, 23, 235, 0.50);
+}
+.plan-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.plan-price-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.plan-price {
+    color: #000;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.plan-price-container span {
+    color: #484848;
+    font-family: League Spartan;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.plan-description {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.plan-content {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.plan-content li {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+.plan-content svg {
+    width: 2rem;
+    height: 2rem;
+}
+.plan-content span {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.plan-content strong {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.plan > a {
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.plan > a:hover {
+    opacity: 0.8;
+}
+
+.plan.free .plan-title {
+    color: #61D8DE;
+}
+.plan.free svg {
+    fill: #61D8DE;
+}
+.plan.free a {
+    background-color: #61D8DE;
+}
+
+.plan.basic .plan-title {
+    color: #000;
+}
+.plan.basic svg {
+    fill: #000;
+}
+.plan.basic a {
+    background-color: #000;
+}
+
+.plan.education .plan-title, .plan.education strong {
+    color: #253BFF;
+}
+.plan.education svg {
+    fill: #253BFF;
+}
+.plan.education a {
+    background-color: #253BFF;
+}
+
+.plan.business .plan-title, .plan.business strong {
+    color: #5E17EB;
+}
+.plan.business svg {
+    fill: #5E17EB;
+}
+.plan.business a {
+    background-color: #5E17EB;
+}
+.plan.basic .plan-price, .plan.basic .plan-description, .plan.basic span, .plan.basic strong {
+    color: white;
+}
+
+
+@media only screen and (max-width: 500px) {
+    section.bottom {
+        margin: 0 auto;
+        max-width: 80vw;
+    }
+}
+@media only screen and (min-height: 900px) {
+    main {
+        justify-content: space-around;
+    }
+}
