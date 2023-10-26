@@ -1,4 +1,16 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*Prevent translations from affecting the site*/
+*::first-letter {
+  text-transform: capitalize;
+}
+h1, font, h2 font, h3 font, h4 font, h5 font, h6 font, p font, span font {
+  color: inherit;
+  font: inherit;
+}
+h1 font font, h2 font font, h3 font font, h4 font font, h5 font font, h6 font font, p font font, span font font {
+  font: inherit;
+  color: inherit;
+}
 
 /* Document
    ========================================================================== */
