@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/activity-creation/basic-info.css">
-    <link rel="icon" href="./resources/activify-logo.png">
+    <link rel="icon" href="../resources/activify-logo.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -13,6 +13,177 @@
     <title>Crea una Actividad | Activify</title>
 </head>
 <body>
-    
+    <header>
+        <a href="javascript:history.back()">
+            <img src="../resources/activity-creation/back-icon.svg" alt="back purple icon">
+        </a>
+        <h1>Crea una actividad <strong class="hidden">IA</strong> de <span id="activity-type-name">Lluvia de palabras</span></h1>
+    </header> 
+
+    <main>
+        <div class="form-wrapper">
+            <form>
+                <section class="info-section">
+                    <div class="input-holder">
+                        <label for="activity-name-input">
+                            <span>1. Nombre de la actividad</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>Este será el nombre que aparecerá en búsquedas tuyas y de otros usuarios. Debe relacionarse con la actividad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <input maxlength="20" required name="activity-name-input" id="activity-name-input" type="text" placeholder="Un nombre para tu actividad...">
+                        <span>0/20</span>
+                    </div>
+                    <div class="input-holder">
+                        <label for="activity-category-select">
+                            <span>2. Categoría de la actividad</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>Esta categoría aparecerá junto a la actividad y otros profesores podrán guiarse por ello.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <select  maxlength="1" required name="activity-category-select" id="activity-category-select">
+                            <option value="empty">Selecciona la categoría adecuada...</option>
+                            <option value="full vocabulario">Vocabulario</option>
+                            <option value="full gramatica">Gramática</option>
+                            <option value="full lectura">Lectura</option>
+                        </select>
+                    </div>
+                    <div class="input-holder">
+                        <label for="activity-description-input">
+                            <span>3. Descripción de la actividad</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>Esta descripción aparece junto como parte de la actividad cuando otros o tú la visualizan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="text" name="activity-description-input" id="activity-description-input" required maxlength="100" placeholder="Escribe un descripción corta para tu actividad...">
+                        <span>0/100</span>
+                    </div>
+                </section>
+
+                <section class="metadata-section hidden">
+                    <div class="input-holder">
+                        <label for="activity-type-input">
+                            <span>4. Dificultad (nivel de inglés)</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>Esto define el nivel de inglés que se usará para las actividades en la escala europea (A1, A2, B1, B2, C1, C2).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <select  maxlength="1" required name="activity-level-input" id="activity-level-input">
+                            <option value="empty">Selecciona el nivel adecuado...</option>
+                            <option value="full A1">A1 (Básico bajo)</option>
+                            <option value="full A2">A2 (Básico alto)</option>
+                            <option value="full B1">B1 (Intermedio bajo)</option>
+                            <option value="full B2">B2 (Intermedio alto)</option>
+                            <option value="full C1">C1 (Avanzado bajo)</option>
+                            <option value="full C2">C2 (Avanzado alto)</option>
+                        </select>
+                    </div>
+                    <div class="input-holder">
+                        <label for="activity-keyword-input">
+                            <span>5. Palabras clave (opcional)</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>Estas permitirán que encuentren tu actividad con más facilidad al buscar las palabras.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <input maxlength="10" name="activity-keyword-input" id="activity-keyword-input" type="text" placeholder="Ingresa una palabra clave y haz click debajo">
+                        <span>0/10</span>
+                    </div>
+                    <div class="input-holder box-holder">
+                        <div class="activity-keywords-box"  id="activity-keywords-box">
+                        </div>
+                        <p id="keywords-error-message"></p>
+                        <span>0/5</span>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h3>Información para la IA</h3>
+                    <div class="input-holder">
+                        <label for="activity-theme-input">
+                            <span>6. Tema principal</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>En base a este tema la IA generará contenido. Ejemplo: Frutas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <input maxlength="20" required name="activity-theme-input" id="activity-theme-input" type="text" placeholder="El tema de tu actividad...">
+                        <span>0/20</span>
+                    </div>
+                    <div class="input-holder">
+                        <label for="activity-purpose-input">
+                            <span>7. Propósito</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>La IA analizará este propósito y generará contenido adecuado. Ejemplo: Aprender vocabulario sobre las frutas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <input maxlength="20" required name="activity-purpose-input" id="activity-purpose-input" type="text" placeholder="El propósito de tu actividad...">
+                        <span>0/30</span>
+                    </div>
+                    <div class="input-holder">
+                        <label for="activity-content-input">
+                            <span>8. Contenido (opcional)</span>
+                            <div class="image-holder">
+                                <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                                <div class="input-tooltip">
+                                    <div class="tooltip-arrow"></div>
+                                    <div class="tooltip-content">
+                                        <p>Explícale lo que quieras a la IA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <textarea rows="3" name="activity-content-input" id="activity-content-input" maxlength="150" placeholder="Explica qué es aquello que quieres que tu actividad refleje o contenga..."></textarea>
+                        <span>0/150</span>
+                    </div>
+                </section>
+            </form>
+            <div class="nav-buttons">
+                <a class="next-button">Crear</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/basic-info.js"></script>
 </body>
 </html>

@@ -11,3 +11,248 @@
     font-family: 'League Spartan';
     color: #000;
 }
+.hidden {
+    display: none;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    width: 100%;
+    padding: 2.5rem 4vw;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4vw;
+}
+header img {
+    aspect-ratio: 1/1;
+    width: 5rem;
+    height: auto;
+}
+header h1 {
+    color: #000;
+    font-size: 4rem;
+    font-weight: 500;
+}
+header h1 strong {
+    color: #5E17EB;
+    font-weight: 500;
+}
+#activity-type-name {
+    color: #5E17EB;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        gap: 2rem;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+/**Estilos de main*/
+main {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem calc(8vw + 5rem);
+    gap: 2rem;
+}
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-wrapper form section {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.input-holder label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.input-holder label span {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.input-holder label .image-holder {
+    position: relative;
+    z-index: 1;
+}
+.input-holder label .input-tooltip {
+    position: absolute;
+    transform: translateX(-46.5%);
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.input-holder label .tooltip-arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #5E17EB;
+}
+.input-holder label .tooltip-content p {
+    background-color: #5E17EB;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 30rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.input-holder label .image-holder:hover .input-tooltip {
+    display: flex;
+}
+
+.input-holder > input, .input-holder select, .input-holder textarea {
+    padding: 1.2rem 2rem;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid rgba(154, 154, 154, 0.5);
+    font-size: 1.6rem;
+    color: #484848;
+    font-weight: 400;
+}
+.input-holder > input:focus, .input-holder select:focus, .input-holder textarea:focus {
+    outline: none;
+    outline: 2px solid #484848;
+}
+.input-holder select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    font-family: 'League Spartan';
+    background-image: url("../../resources/activity-creation/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 7%;
+    cursor: pointer;
+    margin-bottom: 1.8rem;
+}
+.input-holder > span {
+    margin-left: auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/*Second section*/
+.activity-keywords-box {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid #9A9A9A;
+    margin-top: 1rem;
+}
+.activity-keyword {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #484848;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(154, 154, 154, 0.50);
+    background: #F0F0F0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.activity-keyword a {
+    width: 14px;
+    height: 14px;
+    background-image: url('../../resources/activity-creation/close-icon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity-keyword a:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+    background-color: #d7d7d7;
+}
+.activity-keyword span::first-letter {
+    text-transform: lowercase;
+}
+
+.form-wrapper form h3 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5E17EB;
+}
+#keywords-error-message {
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.form-wrapper .nav-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+.form-wrapper .nav-buttons a {
+    padding: 1.2rem 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    transition: all 0.3s;
+}
+.form-wrapper .nav-buttons a:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+.nav-buttons .next-button {
+    background-color: #5E17EB;
+    color: #fff;
+}
+
+@media only screen and (max-width: 650px) and (max-height: 799px) {
+    main {
+        padding: 2rem 5rem;
+        justify-content: center;
+    }
+    .form-wrapper form section {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-height: 800px) {
+    main {
+        padding: 2rem 5rem;
+        justify-content: center;
+    }
+    .form-wrapper form section {
+        width: 100%;
+    }
+}
