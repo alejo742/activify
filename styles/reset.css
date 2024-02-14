@@ -378,6 +378,6 @@ h1 font font, h2 font font, h3 font font, h4 font font, h5 font font, h6 font fo
   }
   @media only screen and (min-height: 950px) and (min-width: 600px) {
     html {
-      font-size: 87.5%;
+      font-size: 87.52%;
     }
   }
