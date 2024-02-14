@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/dashboard/activity-preview.css">
+    <link rel="stylesheet" href="../styles/reusables/dashboard-sidebar.css">
+    <link rel="icon" href="../resources/activify-logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <title>Actividad - Las frutas | Activify</title>
+</head>
+<body>
+    <div class="dashboard-side-bar">
+        <div class="top">
+            <img src="../resources/activify-logo.png" alt="Activify Logo">
+            <nav class="dashboard-nav">
+                <a href="./home.html" class="nav-element">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
+                    </div>
+                    <span>Página principal</span>
+                </a>
+                <a href="../explore.html" class="nav-element">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M80-200v-60h400v60H80Zm0-210v-60h200v60H80Zm0-210v-60h200v60H80Zm758 420L678-360q-26 20-56 30t-62 10q-83 0-141.5-58.5T360-520q0-83 58.5-141.5T560-720q83 0 141.5 58.5T760-520q0 32-10 62t-30 56l160 160-42 42ZM559.765-380Q618-380 659-420.765q41-40.764 41-99Q700-578 659.235-619q-40.764-41-99-41Q502-660 461-619.235q-41 40.764-41 99Q420-462 460.765-421q40.764 41 99 41Z"/></svg>
+                    </div>
+                    <span>Explora</span>
+                </a>
+                <a href="../activities.html" class="nav-element">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m434-255 229-229-39-39-190 190-103-103-39 39 142 142ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z"/></svg>
+                    </div>
+                    <span>Tus actividades</span>
+                </a>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="account-section">
+                <a href="./profile.html" class="account-button">
+                    <div class="left">
+                        <img id="user-account-image" src="../resources/profile-picture-eg.jpg" alt="User Profile Image">
+                    </div>
+                    <div class="right">
+                        <h5 id="user-account-name">Pedro Pérez</h5>
+                        <span id="user-account-status">Gratis</span>
+                    </div>
+                </a>
+                <a href="./upgrade-plan.html" class="upgrade-button">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M280-160v-60h400v60H280Zm170-170v-356L329-565l-42-42 193-193 193 193-42 42-121-121v356h-60Z"/></svg>
+                    </div>
+                    <span>Mejorar Plan</span>
+                </a>
+            </div>
+            <div class="options-section">
+                <a href="./index.html" class="nav-element">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h291v60H180v600h291v60H180Zm486-185-43-43 102-102H375v-60h348L621-612l43-43 176 176-174 174Z"/></svg>
+                    </div>
+                    <span>Cerrar sesión</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-bar">
+        <div class="mobile-top-bar">
+            <img src="../resources/activify-logo.png" alt="">
+            <div class="burger burger1">
+                <div></div>
+            </div>
+            <div class="dropdown-content">
+                <a href="./profile.html">
+                    <div class="svg-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M222-255q63-40 124.5-60.5T480-336q72 0 134 20.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.814-195Q422-450 382.5-489.686q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314-489.5q-39.686 39.5-97.5 39.5Zm-.219 370q-83.146 0-156.275-31.5t-127.225-86Q142-252 111-324.841 80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.5q-54 54.5-127.129 86T479.595-80Z"/></svg>
+                    </div>
+                    Perfil
+                </a>
+                <a href="../upgrade-plan.html">
+                    <div class="svg-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M280-160v-60h400v60H280Zm170-170v-356L329-565l-42-42 193-193 193 193-42 42-121-121v356h-60Z"/></svg>
+                    </div>
+                    Mejorar plan
+                </a>
+                <a href="../index.html">
+                    <div class="svg-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h291v60H180v600h291v60H180Zm486-185-43-43 102-102H375v-60h348L621-612l43-43 176 176-174 174Z"/></svg>
+                    </div>
+                    Cerrar sesión
+                </a>
+            </div>
+        </div>
+        <div class="mobile-bottom-menu">
+            <a href="../home.html" class="bottom-menu-button">
+                <div class="svg-holder">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
+                </div>
+                <span>Principal</span>
+            </a>
+            <a href="../explore.html" class="bottom-menu-button">
+                <div class="svg-holder">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M80-200v-60h400v60H80Zm0-210v-60h200v60H80Zm0-210v-60h200v60H80Zm758 420L678-360q-26 20-56 30t-62 10q-83 0-141.5-58.5T360-520q0-83 58.5-141.5T560-720q83 0 141.5 58.5T760-520q0 32-10 62t-30 56l160 160-42 42ZM559.765-380Q618-380 659-420.765q41-40.764 41-99Q700-578 659.235-619q-40.764-41-99-41Q502-660 461-619.235q-41 40.764-41 99Q420-462 460.765-421q40.764 41 99 41Z"/></svg>
+                </div>
+                <span>Explora</span>
+            </a>
+            <a href="../activities.html" class="bottom-menu-button">
+                <div class="svg-holder">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m434-255 229-229-39-39-190 190-103-103-39 39 142 142ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z"/></svg>
+                </div>
+                <span>Tus actividades</span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="activity-section">
+            <div class="activity-image" style="background-image: url('../resources/dashboard/result-image.jpg');">
+                <div class="black-image-overlay"></div>
+                <span class="activity-type">Completa la<br>palabra</span>
+                <span class="activity-views">1.2k vistas</span>
+            </div>
+
+            <div class="activity-content">
+                <div class="activity-data">
+                    <h2>Las frutas</h2>
+                    <div class="activity-metadata">
+                        <div class="metadata">
+                            <img src="../resources/dashboard/activity-preview/person-icon.svg" alt="person icon gray">
+                            <span>Pedro Pérez</span>
+                        </div>
+                        <div class="metadata">
+                            <img src="../resources/dashboard/activity-preview/topic-icon.svg" alt="topic icon gray">
+                            <span>Vocabulario</span>
+                        </div>
+                        <div class="metadata">
+                            <img src="../resources/dashboard/activity-preview/calendar-icon.svg" alt="calendar icon gray">
+                            <span>18 Jun. 2023</span>
+                        </div>
+                    </div>
+                    <p class="activity-description">El estudiante aprenderá a escribir los nombres de las frutas en inglés.</p>
+                </div>
+                <div class="activity-actions">
+                    <div class="positive-actions actions-container">
+                        <a class="action-button" style="background-color: #5e17eb;">Jugar ahora</a>
+                        <a class="action-button" style="border: 2px solid #5e17eb; color: #5e17eb;">Compartir</a>
+                    </div>
+                    <div class="negative-actions actions-container">
+                        <a class="action-button" style="background-color: #e80000;">Reportar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/dashboard/navbar.js"></script>
+</body>
+</html>

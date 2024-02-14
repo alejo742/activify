@@ -1,0 +1,180 @@
+:root {
+    --colorPrimario: #fff;
+    --colorPrimarioVariante: #f0f0f0;
+    --colorSecundario: #000;
+    --colorTerciario: #5E17EB;
+    --colorCuaternario: #61D8DE;
+    --grisFuerte: #484848;
+}
+
+*{
+    font-family: 'League Spartan';
+    color: #000;
+}
+.hidden {
+    display: none;
+}
+body {
+    display: flex;
+    align-items: stretch;
+    max-height: 100vh;
+    gap: 3vw;
+}
+
+main {
+    width: min(75rem, 90vw);
+    display: flex;
+    flex-direction: column;
+    gap: max(3vh, 2.5rem);
+    margin: 2rem 0;
+    padding: 0 1rem;
+    overflow-y: auto;
+}
+.activity-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 38.7fr 57.1fr;
+    gap: 3.5rem;
+}
+
+
+.activity-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.black-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+.activity-type {
+    width: 7rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 500;
+    background-color: #61D8DE;
+    color: #fff;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    z-index: 2;
+    text-align: center;
+}
+.activity-views {
+    width: 7rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: #484848;
+    padding: 0.3rem 0;
+    border-radius: 4px;
+    z-index: 2;
+    text-align: center;
+}
+
+.activity-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+.activity-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.activity-data h2 {
+    font-size: 6rem;
+    color: #000;
+    font-weight: 600;
+}
+.activity-metadata {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.metadata {
+    padding: 0.5rem 1.8rem 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.metadata img {
+    aspect-ratio: 1/1;
+    width: 2rem;
+    height: auto;
+}
+.metadata span {
+    color: #9a9a9a;
+    font-size: 15px;
+    font-weight: 400;
+}
+.activity-description {
+    width: 100%;
+    padding: 1.2rem 2.5rem;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    color: #484848;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.activity-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.actions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.action-button {
+    width: 100%;
+    padding: 1.1rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1000px) {
+    .activity-section {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .activity-image {
+        min-height: 30vh;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .activity-metadata {
+        gap: 1rem;
+    }
+    .metadata {
+        padding: 0.5rem;
+        gap: 0.7rem;
+    }
+}
