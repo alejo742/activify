@@ -34,6 +34,9 @@ footer .left h2 {
     line-height: 5rem;
     font-weight: 700;
 }
+footer .left h2::first-letter {
+    text-transform: lowercase;
+}
 footer .left h2 strong {
     color: var(--colorTerciario);
     font-weight: 700;
