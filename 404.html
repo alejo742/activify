@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resources/activify-logo.png">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/reusables/main-navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Page not Found: 404 | Activify</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        header {
+            position: static;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+        @keyframes rotateBackground {
+            0% {
+                transform: none;
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .background-radius-container {
+            position: absolute;
+            width: min(550px, 90%);
+            height: min(500px, 88vh);
+            background: rgba(94, 23, 235, 0.10);
+            border-radius: 48% 40% 50% 38% / 58% 45% 57% 58%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rotateBackground 2s infinite;
+            z-index: 1;
+        }
+        .message-404 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            background-color: #fff;
+            padding: 5rem;
+            width: min(330px, 60%);
+            height: min(350px, 70vh);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 8px;
+        }
+        .message-404 h2 {
+            color: #484848;
+            font-size: 7rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .message-404 h3 {
+            color: #000;
+            font-size: 2.4rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .message-404 p {
+            color: #484848;
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .message-404 a {
+            background-color: #5E17EB;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.1rem 3.5rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .message-404 a:hover {
+            cursor: pointer;
+            opacity: 0.85;
+        }
+        .message-404 a .anchor-text-404 {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+        }
+        .message-404 a .material-symbols-outlined {
+            color: #fff;
+            font-size: 1.8rem;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>activi<strong>fy</strong></h1>
+        <nav>
+            <a href="./login.html">Inicia sesión</a>
+            <a href="./register.html">Regístrate</a>
+            <div class="burger burger1">
+                <div></div>
+            </div>
+            <div class="dropdown-content">
+                <a href="./login.html">Inicia sesión</a>
+                <a href="./register.html">Regístrate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="background-radius-container"></div>
+        <div class="message-404">
+            <h2>404</h2>
+            <h3>Página no encontrada</h3>
+            <p>Este enlace puede estar corrompido o la página ha sido removida/renombrada.</p>
+            <a href="./index.html">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span class="anchor-text-404">Volver</span>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

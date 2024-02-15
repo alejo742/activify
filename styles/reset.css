@@ -381,3 +381,12 @@ h1 font font, h2 font font, h3 font font, h4 font font, h5 font font, h6 font fo
       font-size: 87.52%;
     }
   }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
