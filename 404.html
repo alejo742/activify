@@ -13,27 +13,28 @@
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+        html {
+            height: 100vh;
+            font-size: 62.5%;
+        }
+        @media only screen and (max-width:600px), (max-height: 500px) {
+            html {
+                font-size: 55%;
+            }
+        }
         header {
             position: static;
         }
 
-        main {
+        body, main {
             width: 100%;
             height: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: stretch;
-        }
-        @keyframes rotateBackground {
-            0% {
-                transform: none;
-            }
-            100% {
-                transform: rotate(360deg);
-            }
+            align-items: center;
         }
         .background-radius-container {
-            position: absolute;
             width: min(550px, 90%);
             height: min(500px, 88vh);
             background: rgba(94, 23, 235, 0.10);
@@ -41,19 +42,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: rotateBackground 2s infinite;
-            z-index: 1;
         }
         .message-404 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
             background-color: #fff;
             padding: 5rem;
-            width: min(330px, 60%);
-            height: min(350px, 70vh);
+            width: 60%;
+            height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -123,17 +117,31 @@
             </div>
         </nav>
     </header>
+    <script>
+        //* Hamburger animation
+        ///////////////////////////////////////////
+        // The click
+        const burgerMenu = document.querySelector('.burger1');
+        const dropdown = document.querySelector('.dropdown-content')
+        burgerMenu.classList.add('unToggled')
+        burgerMenu.addEventListener('click', () => {
+            burgerMenu.classList.toggle('toggled')
+            burgerMenu.classList.toggle('unToggled')
+            dropdown.classList.toggle('visible')
+        })
+    </script>
 
     <main>
-        <div class="background-radius-container"></div>
-        <div class="message-404">
-            <h2>404</h2>
-            <h3>Página no encontrada</h3>
-            <p>Este enlace puede estar corrompido o la página ha sido removida/renombrada.</p>
-            <a href="./index.html">
-                <span class="material-symbols-outlined">arrow_back</span>
-                <span class="anchor-text-404">Volver</span>
-            </a>
+        <div class="background-radius-container">
+            <div class="message-404">
+                <h2>404</h2>
+                <h3>Página no encontrada</h3>
+                <p>Este enlace puede estar corrompido o la página ha sido removida/renombrada.</p>
+                <a href="./index.html">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span class="anchor-text-404">Volver</span>
+                </a>
+            </div>
         </div>
     </main>
 </body>
