@@ -144,16 +144,73 @@
                 </div>
                 <div class="activity-actions">
                     <div class="positive-actions actions-container">
-                        <a class="action-button" style="background-color: #5e17eb;">Jugar ahora</a>
-                        <a class="action-button" style="border: 2px solid #5e17eb; color: #5e17eb;">Compartir</a>
+                        <a class="action-button play-button" style="background-color: #5e17eb;">Jugar ahora</a>
+                        <a class="action-button share-button">Compartir</a>
                     </div>
                     <div class="negative-actions actions-container">
-                        <a class="action-button" style="background-color: #e80000;">Reportar</a>
+                        <a class="action-button report-button" style="background-color: #e80000;">Reportar</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <div class="share-notification">
+        <span>¡Enlace copiado al portapapeles!</span>
+        <script>
+            const shareButton = document.querySelector('.share-button');
+            const shareNotif = document.querySelector('.share-notification');
+            
+            shareButton.addEventListener('click', () => {
+                let activityQuery = ""
+                navigator.clipboard.writeText('https://activify.netlify.app/activity-play/activity-preview' + activityQuery);
+                shareNotif.classList.add('active')
+                setTimeout( () => {
+                    shareNotif.classList.remove('active')
+                }, 1500)
+            })
+        </script>
+    </div>
+
+    <div class="report-overlay">
+        <div class="report-popup">
+            <span class="hide-popup">x</span>
+            <h3>Reporta un abuso o actividad sospechosa</h3>
+            <div class="input-holder">
+                <label for="report-category-select">
+                    <span>Selecciona una categoría</span>
+                    <div class="image-holder">
+                        <img src="../resources/activity-creation/question-icon.svg" alt="purple question icon">
+                        <div class="input-tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-content">
+                                <p>Esta categoría nos permitirá evaluar y categorizar el problema.</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <select  maxlength="1" required name="report-category-select" id="report-category-select">
+                    <option value="empty">Selecciona</option>
+                    <option value="full vocabulario">Vocabulario</option>
+                    <option value="full gramatica">Gramática</option>
+                    <option value="full lectura">Lectura</option>
+                </select>
+            </div>
+            <a href="#">Enviar</a>
+        </div>
+        <script>
+            const reportButton = document.querySelector('.report-button');
+            const reportOverlay = document.querySelector('.report-overlay');
+            const hideOverlay = document.querySelector('.hide-popup')
+
+            reportButton.addEventListener('click', () => {
+                reportOverlay.classList.add('visible')
+            })
+            hideOverlay.addEventListener('click', () => {
+                hideOverlay.parentNode.parentNode.classList.remove('visible')
+            })
+        </script>
+    </div>
 
     <script src="../scripts/dashboard/navbar.js"></script>
 </body>
